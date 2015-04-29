@@ -16,4 +16,12 @@
     //         redirectTo: '/'
     //     });
     // }]);
+
+	app.controller('testController', function(){
+		var vm = this;
+
+		vm.speak = "Hello world!";
+
+	});
+
 })();
