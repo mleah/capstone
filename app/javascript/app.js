@@ -1,17 +1,19 @@
-angular.module('licensePlates', []);
-angular.module('licensePlates').config(Configuration);
+(function() {
+    var app = angular.module('licensePlates', []);
 
-
-function Configuration($routeProvider) {
-    var home = '/';
-    $routeProvider
-        .when(home, {
-            templateUrl: '',
-        })
-        .when('/:', {
-            templateUrl: '',
-        })
-        .otherwise({
-            redirectTo: home,
-        });
-}
+    // app.config(['$routeProvider', function($routeProvider) {
+    //     $routeProvider.
+    //     when('/', {
+    //         templateUrl: ''
+    //     }).
+    //     when('/form', {
+    //         templateUrl: ''
+    //     }).
+    //     when('/dash', {
+    //         templateUrl: ''
+    //     }).
+    //     otherwise({
+    //         redirectTo: '/'
+    //     });
+    // }]);
+})();
