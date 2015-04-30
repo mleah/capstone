@@ -1,5 +1,5 @@
 (function() {
-    var app = angular.module('licensePlates', []);
+    var app = angular.module('licensePlates', ['licenseControllers']);
 
     // app.config(['$routeProvider', function($routeProvider) {
     //     $routeProvider.
@@ -16,12 +16,5 @@
     //         redirectTo: '/'
     //     });
     // }]);
-
-	app.controller('testController', function(){
-		var vm = this;
-
-		vm.speak = "Hello world!";
-
-	});
 
 })();
