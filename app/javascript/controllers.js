@@ -1,9 +1,16 @@
 (function() {
   var licenseControllers = angular.module('licenseControllers', []);
 
-  licenseControllers.controller('licenseListCtrl', ['', function() {
+  licenseControllers.controller('licenseListCtrl', [function() {
     var vm = this;
-    vm.states = [];
+    //hardcode some for now
+    vm.states = [{abbreviation: 'AL', 
+                  fullname: 'Alabama',
+            }, {abbreviation: 'AK', 
+                  fullname: 'Alaska',
+            },{abbreviation: 'AZ', 
+                  fullname: 'Arkansas',
+            }];
   }]);
 
   // licenseControllers.controller('testCtrl', ['', function() {

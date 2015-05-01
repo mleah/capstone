@@ -1,5 +1,5 @@
 (function() {
-    var app = angular.module('licensePlates', ['licenseControllers']);
+    var app = angular.module('licensePlates', ['licenseControllers', 'licenseFactories']);
 
     // app.config(['$routeProvider', function($routeProvider) {
     //     $routeProvider.
