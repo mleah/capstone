@@ -1,7 +1,6 @@
 @font-face{
 	font-family: 'ubuntucondensed';
 	src: url(../fonts/ubuntucondensed.ttf) format('truetype');
-
 }
 
 body {
@@ -14,7 +13,6 @@ body {
     height: 380px;
     background-color: black;
     /* border: 2px solid gray;*/
-    
     font-size: 24px;
     color: white;
     margin-top: 100px;
@@ -24,6 +22,7 @@ body {
 
 #topbar {
     text-align: center;
+    height: 65px;
 }
 
 .homeimage {
@@ -41,7 +40,8 @@ body {
 
 .title {
    font-size: 32px;
-   margin-top: 15px;
+   padding: 15px;
+   display: inline-block;
 }
 
 .closeimage {
@@ -55,4 +55,14 @@ body {
 .closebutton{
 	float: right;
 	padding: 5px 10px 10px 10px;
+}
+
+/*landingpage*/
+
+.mainmenuselection{
+
+}
+
+.mainmenubutton{
+	
 }
