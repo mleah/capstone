@@ -1,39 +1,58 @@
-body{
-	background-color: grey;
+@font-face{
+	font-family: 'ubuntucondensed';
+	src: url(../fonts/ubuntucondensed.ttf) format('truetype');
+
+}
+
+body {
+    background-color: grey;
 }
 
 #main {
-  font-family: "Helvetica Neue";
-  width: 800px;
-  height: 380px;
-  background-color: black;
- /* border: 2px solid gray;*/
-  font-size: 24px;
-  color: white;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: auto;
+    font-family: 'ubuntucondensed';
+    width: 800px;
+    height: 380px;
+    background-color: black;
+    /* border: 2px solid gray;*/
+    
+    font-size: 24px;
+    color: white;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-#topbar{
-
+#topbar {
+    text-align: center;
 }
 
 .homeimage {
-	width: 40px;
-	height: 40px;
-	padding: 5px;
-	border: 2px white solid;
-	border-radius: 5px;
-	display: inline-block;
+    width: 39px;
+    height: 39px;
+    padding: 3px;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+
+.homebutton{
+	padding: 5px 10px 10px 10px;
 	float: left;
 }
 
+.title {
+   font-size: 32px;
+   margin-top: 15px;
+}
+
 .closeimage {
-	width: 50px;
-	height: 50px;
-	border: 2px white solid;
-	border-radius: 5px;
-	display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+
+.closebutton{
 	float: right;
+	padding: 5px 10px 10px 10px;
 }

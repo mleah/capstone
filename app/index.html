@@ -9,21 +9,23 @@
 <body ng-app="licensePlates">
     <div id="main">
         <div id="topbar">
-            <form class="homebutton">
-                <a href="#/"><image class="homeimage" src="./images/home.png"/>
+            <span>
+                <a href="#/" class="homebutton"><image class="homeimage" src="./images/home.png"/>
                 </a>
-            </form>
+            </span>
+
+            <span class="title">STATES & PLATES</span>
 
 
-            <form class="closebutton">
-                <a href="#/"><image class="closeimage" src="./images/closebutton.gif"/>
+            <span>
+                <a href="#/" class="closebutton"><image class="closeimage" src="./images/closebutton.png"/>
                 </a>
-            </form>
-
-
+            </span>
 
         </div>
-        {{1+3}}
+
+
+		<p>        {{1+3}}</p>
         <div ng-controller="testController as test">
             {{test.speak}}
         </div>
