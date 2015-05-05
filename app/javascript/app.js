@@ -4,7 +4,7 @@
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
         when('/', {
-            templateUrl: '../partials/landingscreen.html'
+            templateUrl: 'partials/landingscreen.html'
     //     }).
     //     when('/form', {
     //         templateUrl: ''
