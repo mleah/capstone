@@ -1,28 +1,31 @@
-@font-face{
-	font-family: 'ubuntucondensed';
-	src: url(../fonts/ubuntucondensed.ttf) format('truetype');
+@font-face {
+    font-family: 'ubuntucondensed';
+    src: url(../fonts/ubuntucondensed.ttf) format('truetype');
 }
 
 body {
     background-color: grey;
+    font-family: 'ubuntucondensed';
+    color: white;
+    position: absolute;
 }
 
 #main {
-    font-family: 'ubuntucondensed';
     width: 800px;
     height: 380px;
     background-color: black;
     /* border: 2px solid gray;*/
     font-size: 24px;
-    color: white;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
 }
 
 #topbar {
     text-align: center;
     height: 65px;
+    position: absolute;
 }
 
 .homeimage {
@@ -31,17 +34,18 @@ body {
     padding: 3px;
     border: 2px white solid;
     border-radius: 5px;
+    
 }
 
-.homebutton{
-	padding: 5px 10px 10px 10px;
-	float: left;
+.homebutton {
+    padding: 5px 10px 10px 10px;
+    float: left;
 }
 
 .title {
-   font-size: 32px;
-   padding: 15px;
-   display: inline-block;
+    font-size: 36px;
+    padding: 11px;
+    display: inline-block;
 }
 
 .closeimage {
@@ -52,17 +56,50 @@ body {
     border-radius: 5px;
 }
 
-.closebutton{
-	float: right;
-	padding: 5px 10px 10px 10px;
+.closebutton {
+    float: right;
+    padding: 5px 10px 10px 10px;
 }
-
 /*landingpage*/
 
-.mainmenuselection{
-
+.mainmenuselection {
+    border: 2px white solid;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    font-size: 32px;
+    background-color: #308446;
+    color: white;
+    margin: 10px;
 }
 
-.mainmenubutton{
-	
+/*  WAT IS GOING ON!! */
+.mainmenubutton {
+    height: 50px;
+    width: 200px;
+    font-size: 32px;
+    background-color: #308446;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+.mainmenuselection:hover {
+    background-color: #3ba557;
+}
+
+.envelope {
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 25px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
 }
