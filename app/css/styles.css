@@ -15,6 +15,7 @@ body {
     height: 380px;
     background-color: black;
     /* border: 2px solid gray;*/
+    
     font-size: 24px;
     background-image: url("../images/map.png");
     background-repeat: no-repeat;
@@ -60,56 +61,50 @@ body {
 }
 
 .closebutton {
-    padding-top: 5px;
     position: absolute;
+    padding-top: 5px;
     width: 69px;
     height: 59px;
-    left: 455px;
-    top: -10px;
-
+    left: 731px;
 }
 /*landingpage*/
 
-.mainmenuselection {
+.mainmenutext {
     border: 2px white solid;
     border-radius: 5px;
-    padding-top: 5px;
+    padding-top: 4px;
     padding-bottom: 5px;
-    width: 200px;
-    font-size: 32px;
-    background-color: #308446;
-    color: white;
     margin: 10px;
-    position: absolute;
-}
-
-/*  WAT IS GOING ON!! */
-.mainmenubutton {
-    height: 50px;
-    width: 200px;
+    width: 196px;
     font-size: 32px;
+    color: white;
     background-color: #308446;
+    text-align: center;
+}
+/*  WAT IS GOING ON!! */
+
+.mainmenubutton {
+    height: 70px;
+    width: 220px;
+    font-size: 32px;
     color: white;
     text-decoration: none;
-    margin: 10px;
     position: absolute;
-    left: 100px;
-    top: 150px;
+    left: 295px;
 }
 
-.mainmenuselection:hover {
+.mainmenubuttontop {
+ 	top: 100px;
+}
+
+.mainmenubuttonmid {
+    top: 180px;
+}
+
+.mainmenubuttonbottom {
+    top: 260px;
+}
+
+.mainmenutext:hover {
     background-color: #3ba557;
-
-}
-
-.envelope {
-    width: 200px;
-    height: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    padding-top: 25px;
-    position: absolute;
-    left: 100px;
-    top: 150px;
 }
