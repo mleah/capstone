@@ -34,11 +34,13 @@ body {
     padding: 1px;
     border: 2px white solid;
     border-radius: 5px;
+    position: absolute;
+    left: 10px;
 }
 
 .homebutton {
     position: absolute;
-    width: 80px;
+    width: 85px;
     height: 80px;
     padding-top: 5px;
 }
@@ -61,14 +63,16 @@ body {
     padding: 3px;
     border: 2px white solid;
     border-radius: 5px;
+    position: absolute;
+    left: 36px;
 }
 
 .closebutton {
     position: absolute;
     padding-top: 5px;
-    width: 80px;
+    width: 85px;
     height: 80px;
-    left: 736px;
+    left: 715px;
 }
 
 .closeimage:hover{
@@ -90,46 +94,49 @@ body {
     text-align: center;
 }
 
-/* landingscreen.html */
-
 .mainmenubutton {
-    height: 80px;
+    height: 85px;
     width: 220px;
     font-size: 32px;
     color: white;
     text-decoration: none;
     position: absolute;
-    left: 290px;
+    left: 284px;
 }
 
 .mainmenubuttontop {
- 	top: 80px;
+ 	top: 55px;
 }
 
 .mainmenubuttonmid {
-    top: 170px;
+    top: 150px;
 }
 
 .mainmenubuttonbottom {
-    top: 260px;
+    top: 245px;
 }
 
 .mainmenutext:hover {
     background-color: #3ba557;
 }
 
-.closeimage {
-    width: 29px;
+.abouttext {
+    width: 60px;
     height: 29px;
     padding: 3px;
     border: 2px white solid;
     border-radius: 5px;
+    position: absolute;
+    top: 35px;
+    left: 10px;
 }
 
-.closebutton {
+.aboutbutton {
     position: absolute;
-    padding-top: 5px;
-    width: 59px;
-    height: 45px;
-    left: 736px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 85px;
+    height: 85px;
+    top: 295px;
 }
