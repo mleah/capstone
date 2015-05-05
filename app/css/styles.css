@@ -15,7 +15,6 @@ body {
     height: 380px;
     background-color: black;
     /* border: 2px solid gray;*/
-    
     font-size: 24px;
     background-image: url("../images/map.png");
     background-repeat: no-repeat;
@@ -25,22 +24,22 @@ body {
 
 #topbar {
     text-align: center;
-    height: 65px;
+    height: 50px;
     position: absolute;
 }
 
 .homeimage {
-    width: 39px;
-    height: 39px;
-    padding: 3px;
+    width: 33px;
+    height: 33px;
+    padding: 1px;
     border: 2px white solid;
     border-radius: 5px;
 }
 
 .homebutton {
     position: absolute;
-    width: 69px;
-    height: 59px;
+    width: 59px;
+    height: 50px;
     padding-top: 5px;
 }
 
@@ -48,14 +47,14 @@ body {
     font-size: 36px;
     position: absolute;
     left: 275px;
-    top: 11px;
+    top: 7px;
     width: 250px;
 }
 
 .closeimage {
-    width: 35px;
-    height: 35px;
-    padding: 5px;
+    width: 29px;
+    height: 29px;
+    padding: 3px;
     border: 2px white solid;
     border-radius: 5px;
 }
@@ -63,9 +62,9 @@ body {
 .closebutton {
     position: absolute;
     padding-top: 5px;
-    width: 69px;
-    height: 59px;
-    left: 731px;
+    width: 59px;
+    height: 45px;
+    left: 736px;
 }
 /*landingpage*/
 
@@ -95,15 +94,15 @@ body {
 }
 
 .mainmenubuttontop {
- 	top: 100px;
+ 	top: 80px;
 }
 
 .mainmenubuttonmid {
-    top: 180px;
+    top: 160px;
 }
 
 .mainmenubuttonbottom {
-    top: 260px;
+    top: 240px;
 }
 
 .mainmenutext:hover {
