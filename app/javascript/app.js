@@ -5,9 +5,9 @@
         $routeProvider.
         when('/', {
             templateUrl: 'partials/landingscreen.html'
-    //     }).
-    //     when('/form', {
-    //         templateUrl: ''
+        }).
+        when('/newgamewelcome', {
+            templateUrl: 'partials/newgamewelcomescreen.html'
     //     }).
     //     when('/dash', {
     //         templateUrl: ''

@@ -140,3 +140,17 @@ body {
     height: 85px;
     top: 295px;
 }
+
+.abouttext:hover {
+    background-color: grey;
+}
+
+/* newgamewelcomescreen */
+
+.welcomemessage{
+	position: absolute;
+	top: 65px;
+	left: 250px;
+	width: 300px;
+	height: 100px;
+}
