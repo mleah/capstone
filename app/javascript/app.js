@@ -8,12 +8,15 @@
         }).
         when('/newgamewelcome', {
             templateUrl: 'partials/newgamewelcomescreen.html'
-    //     }).
-    //     when('/dash', {
-    //         templateUrl: ''
-    //     }).
-    //     otherwise({
-    //         redirectTo: '/'
+        }).
+        when('/about', {
+            templateUrl: 'partials/about.html'
+        }).
+        when('/maingamescreen', {
+            templateUrl: 'partials/licenseplatemain.html'
+        }).
+        otherwise({
+            redirectTo: '/'
         });
     }]);
 
