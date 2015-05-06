@@ -183,11 +183,10 @@ body {
     opacity: 0.9;
     font-family: 'ubuntucondensed';
     font-size: 38px;
-
 }
 
-.playerbuttontext:hover{
-	background-color: #FFE13D;
+.playerbuttontext:hover {
+    background-color: #FFE13D;
 }
 
 .playerbuttonone {
@@ -209,24 +208,21 @@ body {
     top: 150px;
     left: 245px;
 }
-
 /*about*/
 
-.spacedtext{
-	letter-spacing: 1px;
-	line-height: 140%;
+.spacedtext {
+    letter-spacing: 1px;
+    line-height: 140%;
 }
 
-.textunderline{
-	text-decoration: underline;
+.textunderline {
+    text-decoration: underline;
 }
-
 /*continuewelcome*/
 
-.smalltextoverwrite{
-	font-size: 18px;
-	position: absolute;
-
+.smalltextoverwrite {
+    font-size: 18px;
+    position: absolute;
 }
 
 .smalltextoverwriteone {
@@ -263,11 +259,10 @@ body {
     opacity: 0.9;
     font-family: 'ubuntucondensed';
     font-size: 38px;
-
 }
 
-.overwritebuttontext:hover{
-	background-color: #FFE13D;
+.overwritebuttontext:hover {
+    background-color: #FFE13D;
 }
 
 .overwritebuttonone {
@@ -279,5 +274,31 @@ body {
     top: 85px;
     left: 230px;
 }
+/*LEADERBOARD */
 
-/* */
+.largefont {
+    font-size: 32px;
+}
+
+.rowodd {
+    color: #DEF0E3;
+}
+
+.leaderboard {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    width: 380px;
+    text-align: right;
+}
+
+
+.leadercolumnone {
+    width: 20px;
+    text-align: left;
+}
+
+.leadercolumntwo {
+    width: 120px;
+}
+

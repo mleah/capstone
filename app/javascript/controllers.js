@@ -16,10 +16,7 @@
         }];
     }]);
 
-    // licenseControllers.controller('testCtrl', ['', function() {
-    //   var vm = this;
-    //   vm.whatisfactorydoing? = FACTORYNAME somethign here;
-    // }]);
+    
 
     licenseControllers.controller('testController', ['$scope', '$location', function($scope, $location) {
         var vm = this;
@@ -35,3 +32,9 @@
 
 
 })();
+
+
+// licenseControllers.controller('testCtrl', ['', function() {
+    //   var vm = this;
+    //   vm.whatisfactorydoing? = FACTORYNAME somethign here;
+    // }]);

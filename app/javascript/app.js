@@ -27,6 +27,10 @@
             controller: 'testController',
             templateUrl: 'partials/newgameoverwriteoldgame.html'
         }).
+        when('/leaderboard', {
+            controller: 'testController',
+            templateUrl: 'partials/leaderboard.html'
+        }).
         otherwise({
             redirectTo: '/'
         });
