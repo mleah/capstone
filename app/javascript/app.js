@@ -15,6 +15,9 @@
         when('/maingamescreen', {
             templateUrl: 'partials/licenseplatemain.html'
         }).
+        when('/continuegamewelcome', {
+            templateUrl: 'partials/continuegamewelcomescreen.html'
+        }).
         otherwise({
             redirectTo: '/'
         });
