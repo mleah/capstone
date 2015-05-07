@@ -1,34 +1,42 @@
 (function() {
-    var app = angular.module('licensePlates', ['ngRoute', 'licenseControllers', 'licenseFactories']);
+    var app = angular.module('licensePlates', ['ngRoute',
+        'plateControllers',
+        'gameControllers',
+        'playerControllers',
+        'plateFactories',
+        'gameFactories',
+        'playerFactories'
+    ]);
+
 
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
         when('/', {
-            controller: 'testController',
+            controller: 'testControllerOne',
             templateUrl: 'partials/landingscreen.html'
         }).
         when('/newgamewelcome', {
-            controller: 'licenseListCtrl',
+            controller: '',
             templateUrl: 'partials/newgamewelcomescreen.html'
         }).
         when('/about', {
-            controller: 'testController',
+            controller: '',
             templateUrl: 'partials/about.html'
         }).
         when('/maingamescreen', {
-            controller: 'testController',
+            controller: '',
             templateUrl: 'partials/licenseplatemain.html'
         }).
         when('/continuegamewelcome', {
-            controller: 'testController',
+            controller: '',
             templateUrl: 'partials/continuegamewelcomescreen.html'
         }).
         when('/newgameoverwrite', {
-            controller: 'testController',
+            controller: '',
             templateUrl: 'partials/newgameoverwriteoldgame.html'
         }).
         when('/leaderboard', {
-            controller: 'testController',
+            controller: '',
             templateUrl: 'partials/leaderboard.html'
         }).
         otherwise({
