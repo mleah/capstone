@@ -1,7 +1,7 @@
 (function() {
     var plateControllers = angular.module('plateControllers', []);
 
-   
+
 
 
     plateControllers.controller('testControllerOne', ['$scope', '$location', function($scope, $location) {
@@ -16,6 +16,12 @@
 
 
 
+    }]);
+
+
+    plateControllers.controller('plateProfileList', ['plateProfiles', function(plateProfiles) {
+        var self = this;
+        
     }]);
 
 

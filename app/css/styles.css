@@ -292,7 +292,6 @@ body {
     text-align: right;
 }
 
-
 .leadercolumnone {
     width: 20px;
     text-align: left;
@@ -301,4 +300,51 @@ body {
 .leadercolumntwo {
     width: 120px;
 }
+/*licenseplatelistings*/
 
+.licensePlateDisplay {
+    position: absolute;
+    top: 75px;
+    left: 95px;
+    height: 200px;
+    width: 530px;
+    border: 3px white solid;
+    border-radius: 5px;
+    background-color: #308446;
+    text-align: center;
+    font-size: 18px;
+}
+
+.plateInfo{
+	display: inline-block;
+}
+
+.letterSelect{
+	display: inline-block;
+}
+
+.plateColumn {
+    width: 106px;
+}
+
+.plateColumnT {
+    opacity: 0;
+}
+
+.plateImage {
+    width: 86px;
+    height: 43px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.spacer {
+    width: 20px;
+}
+
+.letterSelect {
+    background-color: #3ba557;
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 85px;
+}
