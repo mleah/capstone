@@ -8,7 +8,7 @@
             templateUrl: 'partials/landingscreen.html'
         }).
         when('/newgamewelcome', {
-            controller: 'testController',
+            controller: 'licenseListCtrl',
             templateUrl: 'partials/newgamewelcomescreen.html'
         }).
         when('/about', {

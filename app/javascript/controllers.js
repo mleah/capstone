@@ -5,6 +5,7 @@
         var vm = this;
         //hardcode some for now
         //lat and long are based on capital
+        
         vm.states = [{
             abbreviation: 'AL',
             fullname: 'Alabama',
@@ -25,7 +26,7 @@
             fullname: 'Arkansas',
             lat: 34.736009,
             long: -92.331122
-        } {
+        }, {
             abbreviation: 'CA',
             fullname: 'California',
             lat: 38.555605,
@@ -120,7 +121,7 @@
             fullname: 'Minnesota',
             lat: 44.95,
             long: -93.094
-        } {
+        }, {
             abbreviation: 'MS',
             fullname: 'Mississippi',
             lat: 32.320,
@@ -168,7 +169,7 @@
         }, {
             abbreviation: 'NC',
             fullname: 'North Carolina',
-            lat:  35.771,
+            lat: 35.771,
             long: -78.638
         }, {
             abbreviation: 'ND',
@@ -269,6 +270,8 @@
 
         // $scope.showHomeButton = $location.path() !== '/';
         console.log($location.path());
+
+
 
     }]);
 
