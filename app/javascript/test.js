@@ -1,5 +1,5 @@
 //testing of Haversine formula-used for determining distance between two lat/long pairs
-//between alabama and juneau, alaska
+//between montgomery, alabama and juneau, alaska
 
 // 32.361538;
         // vm.lon1 = -86.279118;
