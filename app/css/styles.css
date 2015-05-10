@@ -163,19 +163,20 @@ body {
     position: absolute;
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: black;
     width: 95px;
     height: 95px;
-    z-index: 100;
 }
 
 .playerbuttontext {
     position: absolute;
     font-family: 'ubuntucondensed';
-    font-size: 38px;
-    top: 27px;
+    font-size: 39px;
+    height: 95px;
     color: black;
-    left: 39px;
+    width: 95px;
+    padding-top: 27px;
+    
 }
 
 .yellowdiamond{
@@ -187,8 +188,9 @@ body {
 }
 
 
-.yellowdiamond:hover {
-    opacity: 0.7;
+.playerbuttontext:hover {
+    color: grey;
+    font-weight: bold;
 }
 
 
