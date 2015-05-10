@@ -164,49 +164,52 @@ body {
     text-decoration: none;
     text-align: center;
     color: white;
-    width: 80px;
-    height: 80px;
-    padding-top: 5px;
-    padding-left: 5px;
+    width: 95px;
+    height: 95px;
+    z-index: 100;
 }
 
 .playerbuttontext {
     position: absolute;
-    text-align: center;
-    color: black;
-    background-color: #F6D106;
-    height: 58px;
-    width: 71px;
-    padding-top: 13px;
-    border: 2px black solid;
-    border-radius: 5px;
-    opacity: 0.9;
     font-family: 'ubuntucondensed';
     font-size: 38px;
+    top: 27px;
+    color: black;
+    left: 39px;
 }
 
-.playerbuttontext:hover {
-    background-color: #FFE13D;
+.yellowdiamond{
+	width: 105px;
+	height: 105px;
+	position: absolute;
+	left: -5px;
+	top: -2px;
 }
+
+
+.yellowdiamond:hover {
+    opacity: 0.7;
+}
+
 
 .playerbuttonone {
-    top: 50px;
-    left: 80px;
+    top: 35px;
+    left: 70px;
 }
 
 .playerbuttontwo {
-    top: 50px;
-    left: 245px;
+    top: 35px;
+    left: 235px;
 }
 
 .playerbuttonthree {
-    top: 150px;
-    left: 80px;
+    top: 145px;
+    left: 70px;
 }
 
 .playerbuttonfour {
-    top: 150px;
-    left: 245px;
+    top: 145px;
+    left: 235px;
 }
 /*about*/
 
@@ -305,9 +308,9 @@ body {
 .licensePlateDisplay {
     position: absolute;
     top: 75px;
-    left: 47px;
+    left: 27px;
     height: 180px;
-    width: 700px;
+    width: 740px;
     border: 3px white solid;
     border-radius: 5px;
     background-color: #308446;
@@ -323,38 +326,46 @@ body {
 .plateInfoDiv {
     position: absolute;
     top: 70px;
-    left: 61px;
+    left: 77px;
 }
 
 .plateImage {
     width: 100px;
     height: 50px;
-    border: 1px black solid;
+    border: 2px black solid;
     border-radius: 5px;
     margin: 5px 5px;
 }
 
 .plateScrollButton {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 43px;
+    height: 43px;
     border-radius: 40px;
     border: 2px white solid;
     top: 120px;
-    background-color: black;
+    background-color: #272727;
 }
 
 .plateScrollButtonRight {
-    left: 640px;
+    left: 646px;
 }
 
 .plateScrollButtonLeft {
     left: 7px;
 }
 
+.arrow{
+	position: absolute;
+	top: 6px;
+	left: 7px;
+	width: 30px;
+	height: 30px;
+}
+
 .letterSelect {
-    background-color: black;
-    border: 1px white solid;
+    background-color: #272727;
+    border: 2px white solid;
     border-radius: 5px;
     width: 100px;
     height: 40px;
@@ -367,8 +378,9 @@ body {
 .letterSelectButton {
 	position: absolute;
 	top: 50px;
-	z-index: 500;
-	left: 110px;
+	z-index: 100;
+	left: 105px;
+	width: 590px;
 
 
 }
