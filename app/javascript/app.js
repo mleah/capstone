@@ -1,11 +1,11 @@
 (function() {
     var app = angular.module('licensePlates', ['ngRoute',
+        'plateFactories',
+        'gameFactories',
+        'playerFactories',
         'plateControllers',
         'gameControllers',
         'newGameControllers',
-        'plateFactories',
-        'gameFactories',
-        'playerFactories'
     ]);
 
 
