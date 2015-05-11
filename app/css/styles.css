@@ -23,6 +23,8 @@ body {
     position: absolute;
 }
 
+/*navbar*/
+
 #topbar {
     text-align: center;
     height: 50px;
@@ -30,9 +32,9 @@ body {
 }
 
 .homeimage {
-    width: 33px;
-    height: 33px;
-    padding: 1px;
+    width: 29px;
+    height: 29px;
+    padding: 3px;
     border: 2px white solid;
     border-radius: 5px;
     position: absolute;
@@ -138,7 +140,7 @@ body {
     color: white;
     width: 85px;
     height: 85px;
-    top: 295px;
+    top: -30px;
 }
 
 .abouttext:hover {
