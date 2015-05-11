@@ -395,9 +395,8 @@ body {
     color: white;
 }
 
-.letterSelect:hover{
-	background-color: grey;
-
+.letterSelect:hover {
+    background-color: grey;
 }
 
 .letterSelectButton {

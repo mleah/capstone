@@ -13,11 +13,21 @@
 
         vm.addPlayers = function(playerCount) {
             var playerArrayLength = vm.playerArray.length;
-            console.log(playerArrayLength);
+            var playerNumber = 1;
             for (var player = 0; player < (playerCount - playerArrayLength); player++) {
-                vm.playerArray.push("I am a new player!!");
-                console.log(vm.playerArray + "here is the loop index number" + player);
+                vm.playerArray.push(new vm.playerConstructor(playerNumber, player));
+                console.log(playerNumber + " " + vm.playerArray[player] + " " + vm.playerArray[player].playerNumber + " " + vm.playerArray[player].playerIndex + " " + vm.playerArray[player].score + "  here is the loop index number" + player);
+                playerNumber++;
             }
+
+        };
+
+        vm.playerConstructor = function(playerNumber, playerIndex) {
+            console.log(playerNumber);
+            var playerNumber = playerNumber;
+            var playerIndex = playerIndex;
+            var platesFound = [];
+            var score = "i am the score!!";
         };
 
 

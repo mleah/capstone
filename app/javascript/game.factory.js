@@ -4,7 +4,6 @@
 // needs to have these attributes:
 // players
 
-
 // needs to have these actions:
 // game logic
 // 	-new game
