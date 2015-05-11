@@ -1,15 +1,15 @@
-<div>
-    <div class="welcomemessage">Welcome! How many players are there?
-        <a class="playerbuttonlink playerbuttonone" href="#/maingamescreen">
+<div ng-controller="newGameController as newGame">
+    <div class="welcomemessage">Welcome! How many players are there?  <!-- {{newGame.speak}} -->
+        <a class="playerbuttonlink playerbuttonone" href="#/maingamescreen" ng-click="newGame.addPlayers(1)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" /><div class="playerbuttontext">1</div>
         </a>
-        <a class="playerbuttonlink playerbuttontwo" href="#/maingamescreen">
+        <a class="playerbuttonlink playerbuttontwo" href="#/maingamescreen" ng-click="newGame.addPlayers(2)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" /><div class="playerbuttontext">2</div>
         </a>
-        <a class="playerbuttonlink playerbuttonthree" href="#/maingamescreen">
+        <a class="playerbuttonlink playerbuttonthree" href="#/maingamescreen" ng-click="newGame.addPlayers(3)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" /><div class="playerbuttontext">3</div>
         </a>
-        <a class="playerbuttonlink playerbuttonfour" href="#/maingamescreen">
+        <a class="playerbuttonlink playerbuttonfour" href="#/maingamescreen" ng-click="newGame.addPlayers(4)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" /><div class="playerbuttontext">4</div>
         </a>
     </div>

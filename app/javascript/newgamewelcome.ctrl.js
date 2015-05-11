@@ -4,25 +4,26 @@
 
 
 
-    newGameControllers.controller('newGameCtrl', [ function() {
+    newGameControllers.controller('newGameController', [function() {
         var vm = this;
 
+        vm.playerArray = [];
         vm.speak = "Hello world!";
-        // vm.location = '';
-        // vm.showHomeButton = function()
+        console.log(vm.playerArray + "outside of function");
 
-        // $scope.showHomeButton = $location.path() !== '/';
-        // console.log($location.path());
+        vm.addPlayers = function(playerCount) {
+            var playerArrayLength = vm.playerArray.length;
+            console.log(playerArrayLength);
+            for (var player = 0; player < (playerCount - playerArrayLength); player++) {
+                vm.playerArray.push("I am a new player!!");
+                console.log(vm.playerArray + "here is the loop index number" + player);
+            }
+        };
 
 
 
     }]);
 
-
-    plateControllers.controller('plateProfileList', ['plateProfiles', function(plateProfiles) {
-        var self = this;
-        
-    }]);
 
 
 })();

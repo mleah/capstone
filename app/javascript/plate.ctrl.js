@@ -4,7 +4,7 @@
 
 
 
-    plateControllers.controller('testControllerOne', ['$scope', '$location', function($scope, $location) {
+    plateControllers.controller('testControllerThree', ['$scope', '$location', function($scope, $location) {
         var vm = this;
 
         vm.speak = "Hello world!";
