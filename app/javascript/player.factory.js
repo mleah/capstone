@@ -1,5 +1,8 @@
-angular.module('playerFactories', [])
-    .factory('PlayerFactory', function() {
+(function() {
+    var PlayerFactory = angular.module('playerFactories', []);
+
+
+    PlayerFactory.factory('PlayerFactory', [function() {
 
         var PlayerFactory = function(playerNumber, currentIndex) {
             this.playerNumber = playerNumber;
@@ -32,4 +35,6 @@ angular.module('playerFactories', [])
 
         return PlayerFactory;
 
-    });
+    }]);
+
+})();

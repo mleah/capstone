@@ -8,6 +8,10 @@
         'newGameControllers',
     ]);
 
+    // app.controller('testController', ['PlayerFactory', function(PlayerFactory){
+    //         this.speak = "HELLO WORLD!!!";
+
+    // }])
 
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
