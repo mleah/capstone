@@ -1,15 +1,19 @@
 (function() {
-    var licensePlateControllers = angular.module('plateControllers', ['playerFactories']);
+    var licensePlateControllers = angular.module('plateControllers', ['playerFactories', 'plateFactories']);
 
-    licensePlateControllers.controller('plateController', ['PlayerFactory', function(PlayerFactory) {
+    licensePlateControllers.controller('plateController', ['PlayerFactory', 'PlateFactory', function(PlayerFactory, PlateFactory) {
         var vm = this;
 
         vm.showPlayers = function() {
-        	console.log("Hello world!");
             var players = PlayerFactory.showPlayers();
-    		console.log(players);
             return players;
         };
+
+        vm.showPlates = function(){
+        	var plates = PlateFactory.showPlates();
+        	console.log(plates);
+        	return plates;
+        }
 
     }]);
 })();
