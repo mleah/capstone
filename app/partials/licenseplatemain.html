@@ -11,7 +11,7 @@
         </a>
     </div>
 </div>
-<div>
+<div ng-controller="plateController as plate">
     <div class="letterSelectButton">
         <a class="letterSelect" href="www.google.com">AL - GA</a>
         <a class="letterSelect" href="www.google.com">HI - MD</a>
@@ -47,7 +47,7 @@
         </div>
         <a class="plateScrollButton plateScrollButtonLeft"><img class="arrow" src="./images/leftarrow.gif" /></a>
     </div>
-    <div class="scorebutton scoreplates">Scores:
-        <div class=""></div>
+    <div class="scorebutton scoreplates">Scores:  
+        <a class="" href="" ng-mousedown="plate.showPlayers()">Click me!</a>
     </div>
 </div>
