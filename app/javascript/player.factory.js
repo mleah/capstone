@@ -26,8 +26,10 @@
                 }
             },
 
-            addScore: function(value) {
-                 players = value;
+            addPoints: function(playerIndex, points) {
+                 var score = playersArray[playerIndex].score;
+                 score = score + points;
+                 playersArray[playerIndex].score = score;
             }
         };
 
