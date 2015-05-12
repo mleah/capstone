@@ -360,7 +360,14 @@
             return {
                 showPlates: function() {
                     return plateArray;
+                },
+
+                getPlate: function(indexNumber){
+                    return plateArray[indexNumber];
+
                 }
+
+                //function to return one plate object based on the index  plateArray[indexNumber]
 
                 //need function to change found to true
                 //need function or something to access lat and long of state at specific index when plate is clicked on

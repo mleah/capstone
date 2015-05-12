@@ -1,16 +1,19 @@
 (function() {
-    var gameFactories = angular.module('gameFactories', []);
+    var gameFactories = angular.module('gameFactories', ['playerFactories', 'plateFactories']);
 
-// needs to have these attributes:
-// players
+    gameFactories.factory('GameFactory', [ 'PlayerFactory', 'PlateFactory', function(PlayerFactory, PlateFactory) {
 
-// needs to have these actions:
-// game logic
-// 	-new game
-// 	-scoring
-// 	-spotted plates??
-// 	-add player
-// 	-score reults
-// 	-click plate        
+        var currentPlate;
+
+        return{
+
+        }
+        
+
+        
+
+        return GameFactory;
+
+    }]);
 
 })();

@@ -13,6 +13,10 @@
         	var plates = PlateFactory.showPlates();
         	console.log(plates);
         	return plates;
+        };
+
+        vm.getPlate = function(){
+        	//get index of plate clicked on
         }
 
     }]);
