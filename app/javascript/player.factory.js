@@ -1,6 +1,38 @@
 (function() {
-    var playerFactories = angular.module('playerFactories', []);
+    var PlayerFactory = angular.module('playerFactories', []);
 
-        
+
+    PlayerFactory.factory('PlayerFactory', [function() {
+
+        var playersArray = [];
+        var PlayerFactory = function(playerNumber, currentIndex) {
+            this.playerNumber = playerNumber;
+            this.playerIndex = currentIndex;
+            this.platesFound = [];
+            this.score = 0;
+        };
+
+        return {
+            showPlayers: function() {
+                return playersArray;
+            },
+
+            addPlayers: function(playerCount) {
+                var playerArrayLength = playersArray.length;
+                var playerNumber = 1;
+                for (var i = 0; i < (playerCount - playerArrayLength); i++) {
+                    playersArray.push(new PlayerFactory(playerNumber, i));
+                    playerNumber++;
+                }
+            },
+
+            addScore: function(value) {
+                 players = value;
+            }
+        };
+
+        return PlayerFactory;
+
+    }]);
 
 })();

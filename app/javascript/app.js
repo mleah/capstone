@@ -1,13 +1,17 @@
 (function() {
     var app = angular.module('licensePlates', ['ngRoute',
+        'plateFactories',
+        'gameFactories',
+        'playerFactories',
         'plateControllers',
         'gameControllers',
         'newGameControllers',
-        'plateFactories',
-        'gameFactories',
-        'playerFactories'
     ]);
 
+    // app.controller('testController', ['PlayerFactory', function(PlayerFactory){
+    //         this.speak = "HELLO WORLD!!!";
+
+    // }])
 
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
