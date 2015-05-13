@@ -5,11 +5,11 @@
         var vm = this;
 
         vm.addPoints = function(playerIndex, points) {
-            console.log(playerIndex + "  " + points);
+            console.log("Player index is " + playerIndex + " player score is " + points);
             var players = PlayerFactory.showPlayers();
-            console.log(players[playerIndex]);
+            console.log("player object before function call, playernumber " + players[playerIndex].playerNumber +"  player score " +players[playerIndex].score);
             var score = PlayerFactory.addPoints(playerIndex, points);
-            console.log(players[playerIndex]);
+            console.log("player object after addPoints function call, playernumber " + players[playerIndex].playerNumber +"  player score " +players[playerIndex].score);
         };
 
         vm.getCurrentPlate = function(){
