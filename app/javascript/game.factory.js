@@ -6,6 +6,14 @@
         var currentPlate;
 
         return{
+        	setCurrentPlate: function(newPlate){
+        		currentPlate = newPlate;
+        		return currentPlate;
+
+        	}, 
+        	getCurrentPlate: function() {
+                    return currentPlate;
+                },
 
         }
         

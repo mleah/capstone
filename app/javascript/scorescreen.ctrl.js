@@ -1,7 +1,7 @@
 (function() {
-    var scoreControllers = angular.module('scoreControllers', ['playerFactories', 'plateFactories']);
+    var scoreControllers = angular.module('scoreControllers', ['playerFactories', 'plateFactories', 'gameFactories']);
 
-    scoreControllers.controller('scoreController', ['PlayerFactory', 'PlateFactory', function(PlayerFactory, PlateFactory) {
+    scoreControllers.controller('scoreController', ['PlayerFactory', 'PlateFactory', 'GameFactory', function(PlayerFactory, PlateFactory, GameFactory) {
         var vm = this;
 
         vm.addPoints = function(playerIndex, points) {
@@ -10,6 +10,12 @@
             console.log(players[playerIndex]);
             var score = PlayerFactory.addPoints(playerIndex, points);
             console.log(players[playerIndex]);
+        };
+
+        vm.getCurrentPlate = function(){
+            var plate = GameFactory.getCurrentPlate();
+            console.log("plate/state name should be.... " + plate.fullname);
+            return plate;
         };
 
         vm.distanceTo = function(lat1, lon1, lat2, lon2, unit) {

@@ -20,23 +20,23 @@
         <a class="letterSelect" href="www.google.com">SD - WY</a>
     </div>
     <div class="plateInfoDiv">
-        <a class="plateInfo" href="#/scorescreen">
+        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(0)">
             <img class="plateImage" src="./images/AL-default.jpg" />
             <div class="plateState">Alabama</div>
         </a>
-        <a class="plateInfo" href="#/scorescreen">
+        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(1)">
             <img class="plateImage" src="./images/AK-default.jpg" />
             <div class="plateState">Alaska</div>
         </a>
-        <a class="plateInfo" href="#/scorescreen">
+        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(2)">
             <img class="plateImage" src="./images/AZ-default.jpg" />
             <div class="plateState">Arizona</div>
         </a>
-        <a class="plateInfo" href="#/scorescreen">
+        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(3)">
             <img class="plateImage" src="./images/AR-default.jpg" />
             <div class="plateState">Arkansas</div>
         </a>
-        <a class="plateInfo" href="#/scorescreen">
+        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(4)">
             <img class="plateImage" src="./images/CA-default.jpg" />
             <div class="plateState">California</div>
         </a>
@@ -47,8 +47,9 @@
         </div>
         <a class="plateScrollButton plateScrollButtonLeft"><img class="arrow" src="./images/leftarrow.gif" /></a>
     </div>
-    <div class="scorebutton scoreplates">Scores:  
-        <a class="" href="" ng-mousedown="plate.showPlayers()">Click me!</a>
-        <a class="" href="" ng-mousedown="plate.showPlates()">Click me!</a>
+    <div class="scorebutton scoreplates"><div class= "testingbox">
+    <div class="testing" ng-repeat="player in plate.showPlayers()">Player {{player.playerNumber}}: {{player.score}} pts</div></div>
+       <!--  <a class="" href="" ng-mousedown="plate.showPlayers()">Click me!</a>
+        <a class="" href="" ng-mousedown="plate.showPlates()">Click me!</a> -->
     </div>
 </div>

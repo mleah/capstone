@@ -12,23 +12,23 @@
     </div>
 </div>
 <div ng-controller="scoreController as score">
-    <div class="welcomemessage">Which player found this state??
-        <a class="playerbuttonlink playerbuttonone" href="" ng-mousedown="score.addPoints(1, 1000)">
+    <div class="welcomemessage">Which player found {{score.getCurrentPlate().fullname}}??
+        <a class="playerbuttonlink playerbuttonone" href="#/maingamescreen" ng-mousedown="score.addPoints(0, 1000)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" />
             <div class="playerbuttontext">1</div>
         </a>
-        <a class="playerbuttonlink playerbuttontwo" href="" ng-mousedown="score.addPoints(2, 1000)">
+        <a class="playerbuttonlink playerbuttontwo" href="#/maingamescreen" ng-mousedown="score.addPoints(1, 1000)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" />
             <div class="playerbuttontext">2</div>
         </a>
-        <a class="playerbuttonlink playerbuttonthree" href="" ng-mousedown="score.addPoints(3, 1000)">
+        <a class="playerbuttonlink playerbuttonthree" href="#/maingamescreen" ng-mousedown="score.addPoints(2, 1000)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" />
             <div class="playerbuttontext">3</div>
         </a>
-        <a class="playerbuttonlink playerbuttonfour" href="" ng-mousedown="score.addPoints(4, 1000)">
+        <a class="playerbuttonlink playerbuttonfour" href="#/maingamescreen" ng-mousedown="score.addPoints(3, 1000)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" />
             <div class="playerbuttontext">4</div>
         </a>
-        <a href="" ng-mousedown="">CLICK ME!!!!</a href="">
+        <!-- <a href="" ng-mousedown="">CLICK ME!!!!</a href=""> -->
     </div>
 </div>
