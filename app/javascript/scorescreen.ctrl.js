@@ -12,13 +12,24 @@
             console.log("player object after addPoints function call, playernumber " + players[playerIndex].playerNumber + "  player score " + players[playerIndex].score);
         };
 
-        vm.addPlateFound = function(plate, playerIndex){
-            var player =  PlayerFactory.showPlayers()[playerIndex];
-            console.log("player before function call:  "  + player)
+        vm.addPlateFound = function(plate, playerIndex, plateIndex) {
+            var player = PlayerFactory.showPlayers()[playerIndex];
+            console.log("player before function call:  " + player)
             var plateFound = PlayerFactory.addPlateFound(plate, playerIndex);
-            console.log("after functions call: " + plateFound + "  "  + player.platesFound[0].abbreviation);
+            console.log("after function call, before changing value: " + plateFound + "  " + player.platesFound[0].abbreviation);
             return plateFound;
-        }
+        };
+
+        vm.changePlateFound = function(plateIndex){
+            var plate = PlateFactory.showPlates();
+            console.log("get the plates " + plate  );
+            console.log("before changing value:  " + plate[plateIndex].isFound);
+            var changeFoundValue = PlateFactory.plateIsFound(plateIndex);
+            plate = PlateFactory.showPlates();
+            console.log("get the plates again " + plate  );
+            console.log("after changing value " + plate[plateIndex].isFound);
+            return changeFoundValue;
+        };
 
 
         vm.getCurrentPlate = function() {
@@ -32,6 +43,7 @@
             console.log(score);
             return score;
         };
+
 
 
 
