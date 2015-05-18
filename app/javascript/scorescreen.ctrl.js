@@ -12,6 +12,14 @@
             console.log("player object after addPoints function call, playernumber " + players[playerIndex].playerNumber + "  player score " + players[playerIndex].score);
         };
 
+        vm.addPlateFound = function(plate, playerIndex){
+            var player =  PlayerFactory.showPlayers()[playerIndex];
+            console.log("player before function call:  "  + player)
+            var plateFound = PlayerFactory.addPlateFound(plate, playerIndex);
+            console.log("after functions call: " + plateFound + "  "  + player);
+            return plateFound;
+        }
+
 
         vm.getCurrentPlate = function() {
             var plate = GameFactory.getCurrentPlate();

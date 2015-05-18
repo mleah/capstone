@@ -13,7 +13,7 @@
 </div>
 <div ng-controller="scoreController as score">
     <div class="welcomemessage">Which player found {{score.getCurrentPlate().fullname}}??
-        <a class="playerbuttonlink playerbuttonone" href="#/maingamescreen" ng-mousedown="score.addPoints(0, score.getScore(42.3314, -83.0458, score.getCurrentPlate().lat, score.getCurrentPlate().long, 'mile'))">
+        <a class="playerbuttonlink playerbuttonone" href="#/maingamescreen" ng-mousedown="score.addPoints(0, score.getScore(42.3314, -83.0458, score.getCurrentPlate().lat, score.getCurrentPlate().long, 'mile')); score.addPlateFound(score.getCurrentPlate(), 0)">
             <img src="./images/yellowdiamond2.gif" class="yellowdiamond" />
             <div class="playerbuttontext">1</div>
         </a>

@@ -27,9 +27,14 @@
             },
 
             addPoints: function(playerIndex, points) {
-                 var score = playersArray[playerIndex].score;
-                 score = score + points;
-                 playersArray[playerIndex].score = score;
+                var score = playersArray[playerIndex].score;
+                score = score + points;
+                playersArray[playerIndex].score = score;
+            },
+
+            addPlateFound: function(plate, playerIndex) {
+                playersArray[playerIndex].platesFound.push("hey!!");
+                console.log(playersArray[playerIndex].platesFound + "  does it work??");
             }
         };
 
