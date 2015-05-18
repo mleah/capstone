@@ -3,6 +3,7 @@
 
     licensePlateControllers.controller('plateController', ['PlayerFactory', 'PlateFactory', 'GameFactory', function(PlayerFactory, PlateFactory, GameFactory) {
         var vm = this;
+        vm.plateArray = PlateFactory.showPlates();
 
         vm.showPlayers = function() {
             var players = PlayerFactory.showPlayers();
@@ -12,6 +13,7 @@
         vm.showPlates = function(){
         	var plates = PlateFactory.showPlates();
         	console.log(plates);
+        	vm.plateArray = plates;
         	return plates;
         };
 
