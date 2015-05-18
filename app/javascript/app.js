@@ -1,11 +1,11 @@
 (function() {
     var app = angular.module('licensePlates', ['ngRoute',
-        'plateFactories',
         'gameFactories',
+        'plateFactories',
         'playerFactories',
         'plateControllers',
-        'gameControllers',
         'newGameControllers',
+        'scoreControllers'
     ]);
 
     // app.controller('testController', ['PlayerFactory', function(PlayerFactory){
@@ -35,6 +35,9 @@
         }).
         when('/leaderboard', {
             templateUrl: 'partials/leaderboard.html'
+        }).
+        when('/scorescreen', {
+            templateUrl: 'partials/scorescreen.html'
         }).
         otherwise({
             redirectTo: '/'

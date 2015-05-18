@@ -27,4 +27,4 @@ function distanceTo(lat1, lon1, lat2, lon2, unit) {
     return dist;
 };
 
-distanceTo(32.361538, -86.279118, 58.301935, -134.419740);
+distanceTo(42.3314, -83.0458, 58.301935, -134.419740);
