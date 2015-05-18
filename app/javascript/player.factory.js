@@ -33,8 +33,9 @@
             },
 
             addPlateFound: function(plate, playerIndex) {
-                playersArray[playerIndex].platesFound.push("hey!!");
+                playersArray[playerIndex].platesFound.push(plate);
                 console.log(playersArray[playerIndex].platesFound + "  does it work??");
+                return "ham";
             }
         };
 

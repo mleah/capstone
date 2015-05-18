@@ -16,7 +16,7 @@
             var player =  PlayerFactory.showPlayers()[playerIndex];
             console.log("player before function call:  "  + player)
             var plateFound = PlayerFactory.addPlateFound(plate, playerIndex);
-            console.log("after functions call: " + plateFound + "  "  + player);
+            console.log("after functions call: " + plateFound + "  "  + player.platesFound[0].abbreviation);
             return plateFound;
         }
 
