@@ -1,7 +1,7 @@
 (function() {
-   angular
-       .module('licensePlates')
-       .filter('startFrom', function() {
+    angular
+        .module('licensePlates')
+        .filter('startFrom', function() {
             return function(input, start) {
                 console.log(input);
                 console.log(start);
