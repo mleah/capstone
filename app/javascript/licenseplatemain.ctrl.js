@@ -33,6 +33,13 @@
             $location.path(path);
         };
 
+        vm.plateFound = function(state){
+            angular.element(document.getElementsById(state)).addClass("contentLoaded");
+        };
+
+        //needs to check if isFound is true
+        //if true, add class to ng-repeat
+
 
 
     }]);

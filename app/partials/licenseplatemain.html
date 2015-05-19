@@ -20,8 +20,8 @@
         <a class="letterSelect" href="" ng-mousedown="plateCtrl.currentPage = 8">SD - WY</a>
     </div>
     <div class="plateInfoDiv">
-        <span ng-repeat="plate in plateCtrl.plateArray | startFrom:plateCtrl.currentPage*plateCtrl.pageSize | limitTo: plateCtrl.pageSize">
-        <button class="plateInfo" ng-mousedown="plateCtrl.getPlate($index+(plateCtrl.currentPage*5)); plateCtrl.goToScore('/scorescreen')" ng-disabled="plate.isFound">
+        <span ng-repeat="plate in plateCtrl.plateArray | startFrom:plateCtrl.currentPage*plateCtrl.pageSize | limitTo: plateCtrl.pageSize" id="{{plate.abbreviation}}">
+        <button class="plateInfo" ng-mousedown="plateCtrl.getPlate($index+(plateCtrl.currentPage*5)); plateCtrl.goToScore('/scorescreen')" ng-disabled="plate.isFound" id="{{plate.isFound}}">
             <img class="plateImage" src="./images/{{plate.abbreviation}}-default.jpg" />
             <div class="plateState">{{plate.fullname}}</div>
         </button></span>
