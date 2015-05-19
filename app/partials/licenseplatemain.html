@@ -11,45 +11,29 @@
         </a>
     </div>
 </div>
-<div ng-controller="plateController as plate">
+<div ng-controller="plateController as plateCtrl">
     <div class="letterSelectButton">
-        <a class="letterSelect" href="www.google.com">AL - GA</a>
-        <a class="letterSelect" href="www.google.com">HI - MD</a>
-        <a class="letterSelect" href="www.google.com">MA - NJ</a>
-        <a class="letterSelect" href="www.google.com">NM - SC</a>
-        <a class="letterSelect" href="www.google.com">SD - WY</a>
+        <a class="letterSelect" href="" ng-mousedown="plateCtrl.currentPage = 0">AL - GA</a>
+        <a class="letterSelect" href="" ng-mousedown="plateCtrl.currentPage = 2">HI - MD</a>
+        <a class="letterSelect" href="" ng-mousedown="plateCtrl.currentPage = 4">MA - NJ</a>
+        <a class="letterSelect" href="" ng-mousedown="plateCtrl.currentPage = 6">NM - SC</a>
+        <a class="letterSelect" href="" ng-mousedown="plateCtrl.currentPage = 8">SD - WY</a>
     </div>
     <div class="plateInfoDiv">
-        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(0)">
-            <img class="plateImage" src="./images/AL-default.jpg" />
-            <div class="plateState">Alabama</div>
-        </a>
-        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(1)">
-            <img class="plateImage" src="./images/AK-default.jpg" />
-            <div class="plateState">Alaska</div>
-        </a>
-        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(2)">
-            <img class="plateImage" src="./images/AZ-default.jpg" />
-            <div class="plateState">Arizona</div>
-        </a>
-        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(3)">
-            <img class="plateImage" src="./images/AR-default.jpg" />
-            <div class="plateState">Arkansas</div>
-        </a>
-        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plate.getPlate(4)">
-            <img class="plateImage" src="./images/CA-default.jpg" />
-            <div class="plateState">California</div>
-        </a>
+        <span ng-repeat="plate in plateCtrl.plateArray | startFrom:plateCtrl.currentPage*plateCtrl.pageSize | limitTo: plateCtrl.pageSize" id="{{plate.abbreviation}}">
+        <button class="plateInfo" ng-mousedown="plateCtrl.getPlate($index+(plateCtrl.currentPage*5)); plateCtrl.goToScore('/scorescreen')" ng-disabled="plate.isFound" id="{{plate.isFound}}">
+            <img class="plateImage" src="./images/{{plate.abbreviation}}-default.jpg" />
+            <div class="plateState">{{plate.fullname}}</div>
+        </button></span>
     </div>
     <div class="licensePlateDisplay">
         <div>
-            <a class="plateScrollButton plateScrollButtonRight" href="www.google.com"><img class="arrow" src="./images/rightarrow.gif" /></a>
+            <a class="plateScrollButton plateScrollButtonRight" ng-hide="plateCtrl.currentPage >= plateCtrl.plateArray.length/plateCtrl.pageSize - 1" href="" ng-mousedown="plateCtrl.currentPage = plateCtrl.currentPage + 1"><img class="arrow" src="./images/rightarrow.gif" /></a>
         </div>
-        <a class="plateScrollButton plateScrollButtonLeft"><img class="arrow" src="./images/leftarrow.gif" /></a>
+        <a class="plateScrollButton plateScrollButtonLeft" href="" ng-hide="plateCtrl.currentPage == 0" ng-mousedown="plateCtrl.currentPage = plateCtrl.currentPage - 1"><img class="arrow" src="./images/leftarrow.gif" /></a>
     </div>
-    <div class="scorebutton scoreplates"><div class= "testingbox">
-    <div class="testing" ng-repeat="player in plate.showPlayers()">Player {{player.playerNumber}}: {{player.score}} pts</div></div>
-       <!--  <a class="" href="" ng-mousedown="plate.showPlayers()">Click me!</a>
-        <a class="" href="" ng-mousedown="plate.showPlates()">Click me!</a> -->
+    <div class="scorebutton scoreplates">
+        <div class="testingbox">
+            <div class="testing" ng-repeat="player in plateCtrl.showPlayers()">Player {{player.playerNumber}}: {{player.score}} pts</div>
+        </div>
     </div>
-</div>
