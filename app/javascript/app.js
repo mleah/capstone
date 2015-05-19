@@ -6,7 +6,6 @@
         'plateControllers',
         'newGameControllers',
         'scoreControllers',
-        'angularUtils.directives.dirPagination'
     ]);
 
     // app.controller('testController', ['PlayerFactory', function(PlayerFactory){
