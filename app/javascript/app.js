@@ -5,7 +5,7 @@
         'playerFactories',
         'plateControllers',
         'newGameControllers',
-        'scoreControllers',
+        'scoreControllers'
     ]);
 
     // app.controller('testController', ['PlayerFactory', function(PlayerFactory){

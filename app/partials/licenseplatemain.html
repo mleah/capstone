@@ -21,10 +21,10 @@
     </div>
     <div class="plateInfoDiv">
         <span ng-repeat="plate in plateCtrl.plateArray | startFrom:plateCtrl.currentPage*plateCtrl.pageSize | limitTo: plateCtrl.pageSize">
-        <a class="plateInfo" href="#/scorescreen" ng-mousedown="plateCtrl.getPlate($index)" ng-disabled="1+1=2">
+        <button class="plateInfo" ng-mousedown="plateCtrl.getPlate($index+(plateCtrl.currentPage*5)); plateCtrl.goToScore('/scorescreen')" ng-disabled="plate.isFound">
             <img class="plateImage" src="./images/{{plate.abbreviation}}-default.jpg" />
             <div class="plateState">{{plate.fullname}}</div>
-        </a></span>
+        </button></span>
     </div>
     <div class="licensePlateDisplay">
         <div>
