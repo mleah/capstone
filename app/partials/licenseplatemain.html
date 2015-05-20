@@ -32,7 +32,7 @@
         </div>
         <a class="plateScrollButton plateScrollButtonLeft" href="" ng-hide="plateCtrl.currentPage == 0" ng-mousedown="plateCtrl.currentPage = plateCtrl.currentPage - 1"><img class="arrow" src="./images/leftarrow.gif" /></a>
     </div>
-    <div class="scorebutton scoreplates">
+    <div class="scorebutton scoreplates" ng-mousedown="plateCtrl.goToScore('/win')">
         <div class="testingbox">
             <div class="testing" ng-repeat="player in plateCtrl.showPlayers()">Player {{player.playerNumber}}: {{player.score}} pts</div>
         </div>

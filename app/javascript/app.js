@@ -34,6 +34,9 @@
         when('/scorescreen', {
             templateUrl: 'partials/scorescreen.html'
         }).
+        when('/win', {
+            templateUrl: 'partials/coupon.html'
+        }).
         otherwise({
             redirectTo: '/'
         });

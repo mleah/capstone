@@ -331,7 +331,7 @@ body {
     font-family: inherit;
 }
 
-#true{
+#true {
     opacity: 0.4;
 }
 
@@ -348,7 +348,6 @@ body {
     left: 105px;
     width: 590px;
 }
-
 
 .plateImage {
     width: 100px;
@@ -434,4 +433,57 @@ body {
 
 .testingbox {
     position: absolute;
+}
+/*winning/coupon*/
+
+.coupondiv {
+    position: absolute;
+    top: 65px;
+    left: 167px;
+    width: 446px;
+    height: 256px;
+    padding: 5px;
+    border: 3px white solid;
+    border-radius: 5px;
+    background-color: #308446;
+    text-align: center;
+}
+
+.couponbody {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    width: 386px;
+    height: 180px;
+    background-color: white;
+    border: 2px black dashed;
+}
+
+.coffeeimage{
+    position: absolute;
+    top: 5px;
+    left: 276px;
+}
+
+.scanimage{
+    position: absolute;
+    top: 120px;
+    left: 298px;
+    height: 60px;
+    width: 60px;
+}
+
+.bogo{
+    color: black;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.smallertext{
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    top: 70px;
+    left: 5px;
 }
