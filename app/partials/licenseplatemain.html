@@ -21,9 +21,9 @@
     </div>
     <div class="plateInfoDiv">
         <span ng-repeat="plate in plateCtrl.plateArray | startFrom:plateCtrl.currentPage*plateCtrl.pageSize | limitTo: plateCtrl.pageSize" id="{{plate.abbreviation}}">
-        <button class="plateInfo" ng-mousedown="plateCtrl.getPlate($index+(plateCtrl.currentPage*5)); plateCtrl.goToScore('/scorescreen')" ng-disabled="plate.isFound" id="{{plate.isFound}}">
+        <button class="plateInfo" ng-mousedown="plateCtrl.getPlate($index+(plateCtrl.currentPage*5)); plateCtrl.goToPath('/scorescreen')" ng-disabled="plate.isFound" id="{{plate.isFound}}">
             <img class="plateImage" src="./images/{{plate.abbreviation}}-default.jpg" />
-            <div class="plateState">{{plate.fullname}}</div>
+            <div class="plateState">{{plate.fullname}} <!-- {{$index}} {{$index+(plateCtrl.currentPage*5)}} --></div>
         </button></span>
     </div>
     <div class="licensePlateDisplay">
@@ -32,7 +32,7 @@
         </div>
         <a class="plateScrollButton plateScrollButtonLeft" href="" ng-hide="plateCtrl.currentPage == 0" ng-mousedown="plateCtrl.currentPage = plateCtrl.currentPage - 1"><img class="arrow" src="./images/leftarrow.gif" /></a>
     </div>
-    <div class="scorebutton scoreplates" ng-mousedown="plateCtrl.goToScore('/win')">
+    <div class="scorebutton scoreplates" ng-mousedown="plateCtrl.goToPath('/win')">
         <div class="testingbox">
             <div class="testing" ng-repeat="player in plateCtrl.showPlayers()">Player {{player.playerNumber}}: {{player.score}} pts</div>
         </div>

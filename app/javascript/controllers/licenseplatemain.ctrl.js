@@ -12,23 +12,16 @@
             return players;
         };
 
-        vm.showPlates = function() {
-            var plates = PlateFactory.showPlates();
-            console.log(plates);
-            vm.plateArray = plates;
-            return plates;
-        };
-
         vm.getPlate = function(indexNumber) {
             var plate = PlateFactory.getPlate(indexNumber);
-            console.log("set the plate " + plate.fullname);
+            console.log("set the plate " + plate.fullname + "  index number " + indexNumber);
             GameFactory.setCurrentPlate(plate);
             var isPlateFound = GameFactory.getCurrentPlate();
             console.log("which plate stored? " + isPlateFound.fullname);
             return plate;
         };
 
-        vm.goToScore = function(path) {
+        vm.goToPath = function(path) {
             $location.path(path);
         };
 

@@ -5,7 +5,6 @@
 
         var currentPlate;
 
-
         return {
             setCurrentPlate: function(newPlate) {
                 currentPlate = newPlate;
@@ -15,6 +14,8 @@
             getCurrentPlate: function() {
                 return currentPlate;
             },
+
+        //Haversine formula
             calculateCurrentPlateScore: function(lat1, lon1, lat2, lon2, unit) {
                 var rlat1 = Math.PI * lat1 / 180;
                 var rlat2 = Math.PI * lat2 / 180;
@@ -36,7 +37,6 @@
                 dist = Math.floor(dist);
                 return dist;
             }
-
         }
 
         return GameFactory;

@@ -419,7 +419,6 @@
 
                 plateIsFound: function(indexNumber) {
                     plateArray[indexNumber].isFound = true;
-                    return "durian";
                 }
 
             };

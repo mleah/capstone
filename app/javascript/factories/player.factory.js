@@ -5,6 +5,7 @@
     PlayerFactory.factory('PlayerFactory', [function() {
 
         var playersArray = [];
+        
         var PlayerFactory = function(playerNumber, currentIndex) {
             this.playerNumber = playerNumber;
             this.playerIndex = currentIndex;
