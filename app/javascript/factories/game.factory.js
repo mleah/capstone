@@ -33,7 +33,6 @@
                 if (unit == "N") {
                     dist = dist * 0.8684;
                 }
-                console.log(dist);
                 dist = Math.floor(dist);
                 return dist;
             }

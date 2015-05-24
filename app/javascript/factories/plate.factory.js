@@ -414,7 +414,6 @@
 
                 getPlate: function(indexNumber) {
                     return plateArray[indexNumber];
-
                 },
 
                 plateIsFound: function(indexNumber) {
