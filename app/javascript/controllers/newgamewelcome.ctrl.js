@@ -5,7 +5,6 @@
         var vm = this;
 
         vm.addPlayers = function(playerCount) {
-            var getPLayers = PlayerFactory.addPlayers(playerCount);
             return PlayerFactory.addPlayers(playerCount);
         }
 

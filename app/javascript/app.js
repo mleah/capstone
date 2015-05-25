@@ -34,6 +34,9 @@
         when('/scorescreen', {
             templateUrl: 'partials/scorescreen.html'
         }).
+        when('/playerstats', {
+            templateUrl: 'partials/playerstats.html'
+        }).
         when('/win', {
             templateUrl: 'partials/coupon.html'
         }).
