@@ -5,7 +5,8 @@
         'playerFactories',
         'plateControllers',
         'newGameControllers',
-        'scoreControllers'
+        'scoreControllers',
+        'playerStatsCtrl'
     ]);
 
     app.config(['$routeProvider', function($routeProvider) {
