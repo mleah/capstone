@@ -495,7 +495,7 @@ body {
     left: 30px;
     width: 200px;
     height: 300px;
-    padding: 5px;
+    padding-left: 5px;
     border: 3px white solid;
     border-radius: 5px;
     background-color: #308446;
@@ -518,11 +518,16 @@ body {
     text-decoration: none;
     color: inherit;
     width: 200px;
-    height: 80px;
+    height: 65px;
+    margin: 0px 5px 0px 0px;
     text-align: left;
     font-size: 20px;
     padding: 0px;
     border: 0px;
     background-color: inherit;
     font-family: inherit;
+}
+
+.playerScoreDiv {
+    height: 75px;
 }
